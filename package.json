@@ -8,7 +8,7 @@
     "lint": "turbo lint",
     "storybook": "turbo storybook",
     "build-storybook": "turbo build-storybook",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
   },
   "devDependencies": {
     "@workspace/eslint-config": "workspace:*",
