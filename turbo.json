@@ -10,6 +10,10 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
+    "lint:fix": {
+      "dependsOn": ["^lint:fix"],
+      "cache": false
+    },
     "check-types": {
       "dependsOn": ["^check-types"]
     },
@@ -17,8 +21,15 @@
       "cache": false,
       "persistent": true
     },
-    "storybook": {},
-    "storybook:build": {},
-    "lint:fix": {}
+    "storybook": {
+      "dependsOn": ["^storybook"],
+      "cache": false,
+      "persistent": true
+    },
+    "storybook:build": {
+      "dependsOn": ["^storybook:build"],
+      "inputs": ["$TURBO_DEFAULT$", ".storybook/**"],
+      "outputs": ["storybook-static/**"]
+    }
   }
 }
