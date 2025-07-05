@@ -12,6 +12,7 @@ This monorepo is powered by [Turborepo](https://turbo.build/repo) and includes a
 - ✅ **ESLint** — unified linting with shared rules
 - 🛠️ **TypeScript** — type safety with shared configs
 - 📦 **pnpm** — fast and efficient package management
+- 🪝 **Husky & lint-staged** — modern native Git hooks
 
 ## 📦 Repository Structure
 
@@ -92,8 +93,7 @@ Thanks for helping make this project better! 🙌
 
 ## TODO
 
-- License
-- Pipelines and githooks
+- Pipelines
 - Docker support
 - Testing setup
 - Add linting description in README

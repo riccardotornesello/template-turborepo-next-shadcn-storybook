@@ -1,5 +1,4 @@
 import storybook from "eslint-plugin-storybook"
-
 import { config as baseConfig } from "./base.js"
 
 /**
@@ -8,6 +7,9 @@ import { config as baseConfig } from "./base.js"
  * @type {import("eslint").Linter.Config}
  * */
 export const storybookConfig = [
+  {
+    ignores: ["!.storybook", "storybook-static/*"],
+  },
   ...baseConfig,
   ...storybook.configs["flat/recommended"],
 ]
