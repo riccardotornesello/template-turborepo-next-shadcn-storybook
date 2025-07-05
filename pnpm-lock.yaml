@@ -8,21 +8,12 @@ importers:
 
   .:
     devDependencies:
-      '@workspace/eslint-config':
-        specifier: workspace:*
-        version: link:packages/eslint-config
-      '@workspace/typescript-config':
-        specifier: workspace:*
-        version: link:packages/typescript-config
       prettier:
         specifier: ^3.5.1
         version: 3.5.1
       turbo:
         specifier: ^2.4.2
         version: 2.4.2
-      typescript:
-        specifier: 5.7.3
-        version: 5.7.3
 
   apps/storybook:
     dependencies:
