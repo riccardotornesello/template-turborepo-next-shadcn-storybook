@@ -94,11 +94,8 @@ Thanks for helping make this project better! 🙌
 
 ## TODO
 
-- Pipelines
-- Testing setup
-- Add linting description in README
+- Add UI tests
+- Add all shadcn/ui components
+- Describe linting, pipelines and Docker in README
 - Update cache settings in `turbo.json` to avoid cache misses
-
-### Low priority
-
-- Add many more shadcn/ui components and their documentation in Storybook
+- Test building in pipeline
