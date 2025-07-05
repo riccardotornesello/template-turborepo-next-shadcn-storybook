@@ -13,6 +13,7 @@ This monorepo is powered by [Turborepo](https://turbo.build/repo) and includes a
 - 🛠️ **TypeScript** — type safety with shared configs
 - 📦 **pnpm** — fast and efficient package management
 - 🪝 **Husky & lint-staged** — modern native Git hooks
+- 🐳 **Docker** — containerization for consistent development and production environments
 
 ## 📦 Repository Structure
 
@@ -94,7 +95,6 @@ Thanks for helping make this project better! 🙌
 ## TODO
 
 - Pipelines
-- Docker support
 - Testing setup
 - Add linting description in README
 - Update cache settings in `turbo.json` to avoid cache misses
