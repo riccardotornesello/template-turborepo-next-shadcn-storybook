@@ -1,31 +1,85 @@
-# shadcn/ui monorepo template
+# 🧱 Monorepo with Turborepo, Next.js, Storybook, and Shared Packages
 
-This template is for creating a monorepo with shadcn/ui.
+This monorepo is powered by [Turborepo](https://turbo.build/repo) and includes a modern web stack featuring Next.js for the web application, Storybook for UI component development, and shared packages for consistent configurations and UI components.
 
-## Usage
+## ✨ Features
+
+- 🧱 **Turborepo** — high-performance build system for JavaScript and TypeScript monorepos
+- ⚡️ **Next.js** — full-stack React framework for the `web` app
+- 📕 **Storybook** — UI component development and documentation
+- 🎨 **shadcn/ui** — beautifully designed and accessible components
+- 🧹 **Prettier** — consistent code formatting across the entire repo
+- ✅ **ESLint** — unified linting with shared rules
+- 🛠️ **TypeScript** — type safety with shared configs
+- 📦 **pnpm** — fast and efficient package management
+
+## 📦 Repository Structure
+
+```
+apps/
+├── web/           # Next.js application
+└── storybook/     # Storybook for UI components
+
+packages/
+├── eslint-config/     # Shared ESLint configuration
+├── typescript-config/ # Shared TypeScript configuration
+└── ui/                # Shared UI components (built with shadcn/ui)
+```
+
+## 🛠️ Getting Started
+
+1. **Install dependencies**
 
 ```bash
-pnpm dlx shadcn@latest init
+pnpm install
 ```
 
-## Adding components
+2. **Run the development server**
 
-To add components to your app, run the following command at the root of your `web` app:
+To start all apps in parallel:
 
 ```bash
-pnpm dlx shadcn@latest add button -c apps/web
+pnpm dev
 ```
 
-This will place the ui components in the `packages/ui/src/components` directory.
+Or start individually:
 
-## Tailwind
-
-Your `tailwind.config.ts` and `globals.css` are already set up to use the components from the `ui` package.
-
-## Using components
-
-To use the components in your app, import them from the `ui` package.
-
-```tsx
-import { Button } from "@workspace/ui/components/button"
+```bash
+# Web app
+pnpm --filter web dev
 ```
+
+## 📚 Adding new shadcn/ui components
+
+To add new components using shadcn/ui, follow these steps:
+
+1. **Move to the `ui` package directory:** `cd packages/ui`
+2. **Run the shadcn CLI to generate a new component:** `pnpx shadcn add ...`
+
+## 📖 Available Scripts
+
+- **Start** all apps in development mode: `pnpm run dev`
+- **Start** the web app in development mode: `pnpm run dev --filter web`
+- Start **Storybook**: `pnpm run storybook`
+- **Build all** apps: `pnpm run build`
+- **Build Storybook**: `pnpm run storybook:build`
+- **Lint** the codebase: `pnpm run lint`
+- **Fix linting** issues: `pnpm run lint:fix`
+- **Format** the codebase: `pnpm run format`
+
+## 📁 Shared Packages
+
+- `eslint-config`: Centralized ESLint configuration used across all apps
+- `typescript-config`: Shared `tsconfig` base for consistent type-checking
+- `ui`: Common UI components built with shadcn/ui and Tailwind CSS
+
+## TODO
+
+- contribute guidelines
+- License
+- Stories for shared components
+- Pipelines and githooks
+- Docker support
+- Testing setup
+- Add linting description in README
+- Update cache settings in `turbo.json` to avoid cache misses
