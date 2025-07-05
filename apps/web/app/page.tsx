@@ -1,4 +1,5 @@
 import { Button } from "@workspace/ui/components/button"
+import { Footer } from "@workspace/components/components/footer"
 
 export default function Page() {
   return (
@@ -7,6 +8,8 @@ export default function Page() {
         <h1 className="text-2xl font-bold">Hello World</h1>
         <Button size="sm">Button</Button>
       </div>
+
+      <Footer name="My Name" />
     </div>
   )
 }

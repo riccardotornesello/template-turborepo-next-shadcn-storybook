@@ -91,11 +91,3 @@ It covers everything from setting up the project to creating a pull request.
 - Open a pull request with a clear description
 
 Thanks for helping make this project better! 🙌
-
-## TODO
-
-- Add UI tests
-- Add all shadcn/ui components
-- Describe linting, pipelines and Docker in README
-- Update cache settings in `turbo.json` to avoid cache misses
-- Test building in pipeline

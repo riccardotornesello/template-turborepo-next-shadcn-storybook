@@ -1,16 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite"
-import { fn } from "storybook/test"
-import { Button } from "@workspace/ui/components/button"
+import { Footer } from "@workspace/components/components/footer"
 
 const meta = {
-  title: "UI/Button",
-  component: Button,
+  title: "UI/Footer",
+  component: Footer,
   parameters: {
     layout: "centered",
   },
   argTypes: {},
-  args: { children: "Button", onClick: fn() },
-} satisfies Meta<typeof Button>
+  args: { name: "My Name" },
+} satisfies Meta<typeof Footer>
 
 export default meta
 type Story = StoryObj<typeof meta>
