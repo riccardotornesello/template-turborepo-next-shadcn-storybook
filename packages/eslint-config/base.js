@@ -1,6 +1,6 @@
 import js from "@eslint/js"
+import importPlugin from "eslint-plugin-import"
 import eslintConfigPrettier from "eslint-config-prettier"
-import onlyWarn from "eslint-plugin-only-warn"
 import turboPlugin from "eslint-plugin-turbo"
 import tseslint from "typescript-eslint"
 
@@ -14,6 +14,13 @@ export const config = [
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
   {
+    settings: {
+      "import/resolver": {
+        typescript: {},
+      },
+    },
+  },
+  {
     plugins: {
       turbo: turboPlugin,
     },
@@ -21,9 +28,10 @@ export const config = [
       "turbo/no-undeclared-env-vars": "warn",
     },
   },
+  importPlugin.flatConfigs.recommended,
   {
-    plugins: {
-      onlyWarn,
+    rules: {
+      "import/order": "error",
     },
   },
   {

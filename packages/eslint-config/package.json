@@ -16,7 +16,6 @@
     "@typescript-eslint/parser": "^8.24.1",
     "eslint": "^9.20.1",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-storybook": "^9.0.15",
@@ -24,5 +23,9 @@
     "globals": "^15.15.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.1"
+  },
+  "dependencies": {
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0"
   }
 }
