@@ -73,12 +73,32 @@ To add new components using shadcn/ui, follow these steps:
 - `typescript-config`: Shared `tsconfig` base for consistent type-checking
 - `ui`: Common UI components built with shadcn/ui and Tailwind CSS
 
+## 🤝 Contributing
+
+We welcome contributions!
+
+If you'd like to contribute, please read our [Contribution Guidelines](CONTRIBUTING.md) first.  
+It covers everything from setting up the project to creating a pull request.
+
+### Quick steps:
+
+- Create a feature branch (`feat/your-feature-name`)
+- Make your changes following our linting and formatting rules
+- Test your updates in both `web` and `storybook`
+- Run `pnpm lint` and `pnpm format`
+- Open a pull request with a clear description
+
+Thanks for helping make this project better! 🙌
+
 ## TODO
 
-- contribute guidelines
 - License
 - Pipelines and githooks
 - Docker support
 - Testing setup
 - Add linting description in README
 - Update cache settings in `turbo.json` to avoid cache misses
+
+### Low priority
+
+- Add many more shadcn/ui components and their documentation in Storybook

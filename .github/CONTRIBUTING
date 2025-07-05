@@ -1,0 +1,67 @@
+# 🤝 Contributing
+
+Contributions are welcome and appreciated! Please follow the steps below to contribute:
+
+## 🛠 Prerequisites
+
+- Make sure you have [pnpm](https://pnpm.io) installed.
+- Fork the repository and clone it locally.
+- Install dependencies:
+
+```bash
+pnpm install
+```
+
+## ✨ Creating a Contribution
+
+1. **Create a new branch**
+
+```bash
+git checkout -b feat/your-feature-name
+```
+
+2. **Make your changes**
+
+- Follow the existing code style.
+- Use shared configs (`eslint-config`, `typescript-config`).
+- Add or update UI components in the `ui` package if needed.
+- Test your changes in both `web` and `storybook` apps.
+
+3. **Run linters and formatters**
+
+```bash
+pnpm lint
+pnpm format
+```
+
+4. **Test your changes**
+
+Make sure everything runs smoothly:
+
+```bash
+pnpm dev
+```
+
+5. **Commit**
+
+Use clear, conventional commit messages (e.g., `feat(ui): add Button component`).
+
+6. **Push and create a pull request**
+
+```bash
+git push origin feat/your-feature-name
+```
+
+Then open a Pull Request describing your changes clearly.
+
+## 📦 Adding New Packages or Apps
+
+If you're adding a new app or package:
+
+- Follow the existing folder structure (`apps/` or `packages/`).
+- Update `turbo.json` if needed to include new pipelines.
+- Ensure it's integrated with linting, formatting, and TypeScript configs.
+
+---
+
+Thanks for contributing! 🙌
