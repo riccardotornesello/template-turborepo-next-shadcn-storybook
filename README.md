@@ -77,7 +77,6 @@ To add new components using shadcn/ui, follow these steps:
 
 - contribute guidelines
 - License
-- Stories for shared components
 - Pipelines and githooks
 - Docker support
 - Testing setup
