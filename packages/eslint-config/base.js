@@ -28,7 +28,7 @@ export const config = [
       "turbo/no-undeclared-env-vars": "warn",
     },
   },
-  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.typescript,
   {
     rules: {
       "import/order": "error",
